@@ -1,0 +1,454 @@
+{
+  "pays": "Bosnie-Herzégovine",
+  "drapeau": "🇧🇦",
+  "symbole": "🕌",
+  "titre": "Sarajevo : Détente et Histoire au Cœur des Balkans",
+  "budget_total": "Environ 1450 €/personne",
+  "duree": "13 jours",
+  "date_debut": "2026-01-09",
+  "date_fin": "2026-01-22",
+  "temps_vol": "4h30 (avec escale depuis Paris, France)",
+  "escale": "1",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée sereine à Sarajevo",
+      "legende": "Après votre vol, installez-vous tranquillement et laissez-vous imprégner par l'atmosphère unique de la vieille ville. Une première balade douce est idéale pour commencer votre exploration.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🛬 Arrivée à l'aéroport de Sarajevo</strong>: Transfert vers votre hébergement et installation pour un début de séjour en toute quiétude.",
+        "<strong>🛏️ Installation à l'hôtel</strong>: Prenez le temps de vous rafraîchir et de vous détendre après le voyage.",
+        "<strong>🚶‍♂️ Première balade à Baščaršija</strong>: Flânez dans le quartier ottoman de la vieille ville, admirez la fontaine Sebilj et imprégnez-vous de l'ambiance sans hâte."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "À savoir",
+          "texte": "L'aéroport de Sarajevo (SJJ) est à environ 30 minutes du centre-ville. Des taxis et des bus sont disponibles pour le transfert."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "☕",
+      "titre": "Immersion culturelle et saveurs locales",
+      "legende": "Plongez au cœur de l'histoire et de la culture de Sarajevo en explorant ses lieux emblématiques. Terminez la journée par une expérience culinaire authentique.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🕌 Visite de la Mosquée de Gazi Husrev-beg</strong>: Admirez l'architecture ottomane de cette mosquée historique, un joyau de Baščaršija.",
+        "<strong>🚶‍♀️ Exploration du quartier de Baščaršija</strong>: Perdez-vous dans les ruelles des artisans, découvrez les ateliers de cuivre et les boutiques traditionnelles.",
+        "<strong>☕ Dégustation de café bosnien</strong>: Installez-vous dans un café traditionnel pour savourer un \"kahva\" préparé selon les rituels ancestraux, une véritable pause détente."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Mosquée de Gazi Husrev-beg, Sarajevo",
+          "categorie": "Lieu de culte",
+          "coords": { "lat": 43.8592, "lng": 18.4293 }
+        },
+        {
+          "nom_recherche": "Fontaine Sebilj, Sarajevo",
+          "categorie": "Monument",
+          "coords": { "lat": 43.8596, "lng": 18.4312 }
+        }
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Astuce",
+          "texte": "Le café bosnien se boit lentement, en petites gorgées, souvent accompagné d'un loukoum. C'est un moment de convivialité et de relaxation."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🏞️",
+      "titre": "Nature et panoramas apaisants",
+      "legende": "Échappez à l'agitation urbaine pour une journée dédiée à la nature et aux vues imprenables sur la ville. Une bouffée d'air frais garantie.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🌳 Promenade à Vrelo Bosne</strong>: Explorez les sources de la rivière Bosna, un parc naturel magnifique avec des allées ombragées et des ponts pittoresques, idéal pour une balade douce.",
+        "<strong>🚠 Montée en téléphérique au Mont Trebević</strong>: Profitez d'une vue panoramique spectaculaire sur Sarajevo depuis les hauteurs du Mont Trebević, une expérience visuelle relaxante.",
+        "<strong>☕ Pause détente au Mont Trebević</strong>: Savourez une boisson chaude ou un en-cas dans l'un des cafés du sommet, en admirant le paysage."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Vrelo Bosne, Ilidža",
+          "categorie": "Parc naturel",
+          "coords": { "lat": 43.8228, "lng": 18.2808 }
+        },
+        {
+          "nom_recherche": "Téléphérique de Trebević, Sarajevo",
+          "categorie": "Transport",
+          "coords": { "lat": 43.8559, "lng": 18.4347 }
+        },
+        {
+          "nom_recherche": "Mont Trebević, Sarajevo",
+          "categorie": "Montagne",
+          "coords": { "lat": 43.8325, "lng": 18.4497 }
+        }
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "❄️",
+          "titre": "Météo",
+          "texte": "En janvier, le Mont Trebević peut être enneigé. Prévoyez des vêtements chauds et des chaussures adaptées pour profiter pleinement de la vue."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🌉",
+      "titre": "Ponts historiques et musées apaisants",
+      "legende": "Découvrez les ponts emblématiques de Sarajevo et explorez des musées qui racontent l'histoire de la ville, tout en gardant un rythme doux.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🌉 Visite du Pont Latin</strong>: Traversez ce pont historique, lieu de l'assassinat de l'Archiduc François-Ferdinand, un moment clé de l'histoire européenne.",
+        "<strong>🏛️ Musée de Sarajevo 1878-1918</strong>: Plongez dans l'histoire de la ville à la fin du 19e et début du 20e siècle, avec des expositions qui invitent à la réflexion.",
+        "<strong>🚶‍♂️ Balade le long de la Miljacka</strong>: Profitez d'une promenade relaxante le long de la rivière Miljacka, admirant les différents ponts et l'architecture environnante."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Pont Latin, Sarajevo",
+          "categorie": "Pont",
+          "coords": { "lat": 43.8574, "lng": 18.4266 }
+        },
+        {
+          "nom_recherche": "Musée de Sarajevo 1878-1918, Sarajevo",
+          "categorie": "Musée",
+          "coords": { "lat": 43.8574, "lng": 18.4268 }
+        }
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "📖",
+          "titre": "Contexte historique",
+          "texte": "Le Pont Latin est un lieu chargé d'histoire, marquant le début de la Première Guerre mondiale. Prenez le temps de vous imprégner de son importance."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🏰",
+      "titre": "Fortifications et vues imprenables",
+      "legende": "Montez aux anciennes forteresses pour des vues panoramiques sur Sarajevo. Une journée pour admirer la ville sous un autre angle et prendre de belles photos.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🏰 Visite de la Forteresse Jaune (Žuta Tabija)</strong>: Profitez d'une vue imprenable sur la ville, particulièrement belle au coucher du soleil, un moment de calme et de contemplation.",
+        "<strong>🚶‍♀️ Promenade vers la Forteresse Blanche (Bijela Tabija)</strong>: Continuez votre ascension vers cette autre forteresse pour des perspectives différentes et une balade agréable.",
+        "<strong>☕ Pause thé avec vue</strong>: Trouvez un petit café à proximité des forteresses pour une boisson chaude tout en admirant le panorama."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Forteresse Jaune, Sarajevo",
+          "categorie": "Forteresse",
+          "coords": { "lat": 43.8617, "lng": 18.4363 }
+        },
+        {
+          "nom_recherche": "Forteresse Blanche, Sarajevo",
+          "categorie": "Forteresse",
+          "coords": { "lat": 43.8640, "lng": 18.4390 }
+        }
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "📸",
+          "titre": "Photographie",
+          "texte": "Les forteresses offrent des points de vue exceptionnels pour capturer la beauté de Sarajevo, surtout au lever ou au coucher du soleil."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🕊️",
+      "titre": "Réflexion et sérénité au Tunnel de l'Espoir",
+      "legende": "Une journée dédiée à la mémoire et à la compréhension du passé récent de Sarajevo, suivie d'un moment de recueillement et de détente.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🕊️ Visite du Tunnel de l'Espoir (Tunel Spasa)</strong>: Explorez ce musée émouvant qui témoigne de la résilience de Sarajevo pendant le siège, une expérience poignante mais essentielle.",
+        "<strong>🚶‍♂️ Promenade méditative dans les environs</strong>: Après la visite, prenez le temps de marcher tranquillement dans les champs environnants pour digérer l'expérience.",
+        "<strong>☕ Pause café paisible</strong>: Trouvez un endroit calme pour vous reposer et réfléchir, loin de l'agitation."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Tunnel de l'Espoir, Sarajevo",
+          "categorie": "Musée",
+          "coords": { "lat": 43.8291, "lng": 18.3377 }
+        }
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "🚌",
+          "titre": "Accès",
+          "texte": "Le Tunnel de l'Espoir est un peu excentré. Il est accessible en bus ou en taxi, ou via une visite organisée."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🖼️",
+      "titre": "Art, histoire et détente urbaine",
+      "legende": "Découvrez la richesse artistique et historique de Sarajevo à travers ses musées, puis profitez d'une après-midi de détente dans un quartier animé.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🏛️ Visite du Musée National de Bosnie-Herzégovine</strong>: Explorez les vastes collections archéologiques, ethnographiques et naturelles, un voyage à travers les âges.",
+        "<strong>🎨 Galerie d'Art de Bosnie-Herzégovine</strong>: Admirez les œuvres d'artistes locaux et internationaux, offrant une perspective sur la scène artistique de la région.",
+        "<strong>🚶‍♀️ Balade dans le quartier de Ferhadija</strong>: Promenez-vous dans cette rue piétonne animée, où se côtoient architectures ottomane, austro-hongroise et moderne, un lieu idéal pour observer la vie locale."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Musée National de Bosnie-Herzégovine, Sarajevo",
+          "categorie": "Musée",
+          "coords": { "lat": 43.8530, "lng": 18.4055 }
+        },
+        {
+          "nom_recherche": "Galerie d'Art de Bosnie-Herzégovine, Sarajevo",
+          "categorie": "Galerie d'art",
+          "coords": { "lat": 43.8580, "lng": 18.4200 }
+        },
+        {
+          "nom_recherche": "Rue Ferhadija, Sarajevo",
+          "categorie": "Rue piétonne",
+          "coords": { "lat": 43.8590, "lng": 18.4230 }
+        }
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🚶",
+          "titre": "À pied",
+          "texte": "La rue Ferhadija est un excellent exemple de la diversité architecturale de Sarajevo, où l'Orient et l'Occident se rencontrent."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🛍️",
+      "titre": "Marchés colorés et artisanat local",
+      "legende": "Imprégnez-vous de l'ambiance des marchés locaux, découvrez l'artisanat traditionnel et profitez d'une après-midi pour vous détendre ou faire du shopping.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🛍️ Visite du Marché de Markale</strong>: Explorez ce marché couvert historique, découvrez les produits frais locaux et l'effervescence de la vie quotidienne.",
+        "<strong>🏺 Découverte des artisans de Kazandžiluk</strong>: Flânez dans la rue des chaudronniers, admirez le travail du cuivre et peut-être trouvez un souvenir unique.",
+        "<strong>☕ Détente et shopping libre</strong>: Profitez de l'après-midi pour vous détendre dans un café, faire du shopping ou revisiter un lieu coup de cœur."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Marché de Markale, Sarajevo",
+          "categorie": "Marché",
+          "coords": { "lat": 43.8596, "lng": 18.4206 }
+        },
+        {
+          "nom_recherche": "Rue Kazandžiluk, Sarajevo",
+          "categorie": "Rue artisanale",
+          "coords": { "lat": 43.8594, "lng": 18.4300 }
+        }
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "Les objets en cuivre fabriqués à la main sont des souvenirs authentiques de Sarajevo. N'hésitez pas à marchander gentiment."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🌳",
+      "titre": "Parcs et sérénité urbaine",
+      "legende": "Une journée pour se ressourcer dans les espaces verts de Sarajevo et profiter de la tranquillité des lieux, loin de l'agitation.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🌳 Promenade au Parc Veliki</strong>: Détendez-vous dans ce grand parc central, idéal pour une marche paisible ou simplement pour s'asseoir et observer la vie.",
+        "<strong>⛪ Visite de la Cathédrale du Cœur de Jésus</strong>: Admirez l'architecture néo-gothique de cette cathédrale emblématique, un havre de paix au cœur de la ville.",
+        "<strong>☕ Pause gourmande</strong>: Savourez une pâtisserie locale et un café dans un des salons de thé à proximité."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Parc Veliki, Sarajevo",
+          "categorie": "Parc",
+          "coords": { "lat": 43.8590, "lng": 18.4140 }
+        },
+        {
+          "nom_recherche": "Cathédrale du Cœur de Jésus, Sarajevo",
+          "categorie": "Lieu de culte",
+          "coords": { "lat": 43.8592, "lng": 18.4200 }
+        }
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🕊️",
+          "titre": "Tranquillité",
+          "texte": "Le Parc Veliki est un lieu parfait pour une pause méditative, offrant un contraste apaisant avec l'animation de la ville."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🍽️",
+      "titre": "Exploration culinaire et détente",
+      "legende": "Plongez dans la gastronomie bosnienne avec une expérience culinaire, puis profitez d'une après-midi libre pour vous détendre ou explorer à votre guise.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🍽️ Cours de cuisine bosnienne (optionnel)</strong>: Apprenez à préparer des spécialités locales comme les ćevapi ou le burek, une activité interactive et gourmande.",
+        "<strong>🚶‍♀️ Découverte des ruelles cachées</strong>: Explorez des passages et des cours intérieures moins connus de la vieille ville, à la recherche de trésors cachés.",
+        "<strong>☕ Après-midi libre et détente</strong>: Profitez de ce temps pour vous reposer, lire un livre dans un café ou faire une dernière visite à un endroit que vous avez aimé."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Baščaršija, Sarajevo",
+          "categorie": "Quartier historique",
+          "coords": { "lat": 43.8595, "lng": 18.4300 }
+        }
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "👨‍🍳",
+          "titre": "Cuisine",
+          "texte": "De nombreux restaurants proposent des cours de cuisine pour découvrir les secrets des plats bosniens. Renseignez-vous localement."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🧘",
+      "titre": "Bien-être et sérénité",
+      "legende": "Une journée dédiée au bien-être et à la relaxation, pour recharger les batteries avant la fin du séjour. Profitez des options de détente qu'offre la ville.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🧖‍♀️ Matinée spa ou hammam (optionnel)</strong>: Offrez-vous un moment de détente dans un spa d'hôtel ou un hammam traditionnel, pour une relaxation profonde.",
+        "<strong>📚 Visite de la Bibliothèque Nationale et Universitaire</strong>: Admirez l'architecture impressionnante de ce bâtiment reconstruit, symbole de la résilience de Sarajevo, un lieu calme et inspirant.",
+        "<strong>🚶‍♂️ Balade dans le quartier de Skenderija</strong>: Découvrez ce quartier moderne avec son centre sportif et ses espaces verts, pour une promenade différente."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Bibliothèque Nationale et Universitaire de Bosnie-Herzégovine, Sarajevo",
+          "categorie": "Bibliothèque",
+          "coords": { "lat": 43.8584, "lng": 18.4340 }
+        },
+        {
+          "nom_recherche": "Skenderija, Sarajevo",
+          "categorie": "Quartier",
+          "coords": { "lat": 43.8550, "lng": 18.4160 }
+        }
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "💆‍♀️",
+          "titre": "Détente",
+          "texte": "Plusieurs hôtels à Sarajevo proposent des services de spa et de massage, parfaits pour une journée de relaxation."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🎁",
+      "titre": "Derniers souvenirs et adieux à Sarajevo",
+      "legende": "Profitez de votre dernière journée pour acheter des souvenirs, revisiter vos lieux préférés et savourer une dernière fois l'ambiance unique de Sarajevo.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>🎁 Achats de souvenirs à Baščaršija</strong>: Trouvez les derniers cadeaux et souvenirs dans les boutiques de la vieille ville, des objets artisanaux aux délices locaux.",
+        "<strong>🚶‍♀️ Dernière balade contemplative</strong>: Revoyez vos endroits favoris, prenez le temps de vous imprégner une dernière fois de l'atmosphère de Sarajevo.",
+        "<strong>🍽️ Dîner d'adieu avec spécialités locales</strong>: Terminez votre séjour par un délicieux repas dans un restaurant traditionnel, savourant les saveurs bosniennes."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Baščaršija, Sarajevo",
+          "categorie": "Quartier historique",
+          "coords": { "lat": 43.8595, "lng": 18.4300 }
+        }
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Conseil",
+          "texte": "N'oubliez pas de goûter au rahat lokum (loukoum) et aux dattes, des douceurs parfaites pour accompagner le café bosnien."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "🛫",
+      "titre": "Départ de Sarajevo",
+      "legende": "Après un séjour riche en découvertes et en détente, il est temps de quitter Sarajevo, la tête pleine de souvenirs et le cœur léger.",
+      "lieu": "Sarajevo",
+      "activites": [
+        "<strong>☕ Petit-déjeuner à l'hôtel</strong>: Profitez d'un dernier repas avant de partir.",
+        "<strong>🛄 Préparation et check-out</strong>: Organisez vos affaires et quittez votre hébergement.",
+        "<strong>🛫 Transfert à l'aéroport et vol retour</strong>: Dirigez-vous vers l'aéroport de Sarajevo pour votre vol vers Paris, France."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": "✈️",
+          "titre": "Vol",
+          "texte": "Prévoyez suffisamment de temps pour le transfert à l'aéroport et les formalités d'embarquement."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    { "titre": "Budget vol:", "legende": "A partir de 241 €/pers", "symbole": "🛬" },
+    { "titre": "Budget transports:", "legende": "Environ 100 €/pers (transports locaux, taxi occasionnel)", "symbole": "🚆" },
+    { "titre": "Budget repas:", "legende": "Environ 500 €/pers (restaurants de gamme moyenne)", "symbole": "🥗" },
+    { "titre": "Budget logement:", "legende": "Environ 400 €/pers (hôtel 3* en chambre double)", "symbole": "🛏️" },
+    { "titre": "Budget activités:", "legende": "Environ 200 €/pers (entrées musées, téléphérique, cours de cuisine optionnel)", "symbole": "🎭" }
+  ],
+  "periodes_ideales": [
+    { "titre": "Janvier (hiver)", "symbole": "❄️" },
+    { "titre": "Printemps (avril-mai)", "symbole": "🌸" },
+    { "titre": "Automne (septembre-octobre)", "symbole": "🍂" }
+  ],
+  "infos_pratiques": [
+    { "titre": "En janvier, les températures à Sarajevo varient entre -5°C et 5°C. Prévoyez des vêtements très chauds, un bonnet, des gants et des chaussures imperméables.", "symbole": "🥶" },
+    { "titre": "La monnaie est le Mark convertible (BAM). Les cartes de crédit sont acceptées dans la plupart des commerces, mais ayez toujours un peu de liquide pour les petits achats ou les marchés.", "symbole": "💳" },
+    { "titre": "Le réseau de tramways et de bus est efficace pour se déplacer dans Sarajevo. Les taxis sont abordables. La marche est agréable dans la vieille ville.", "symbole": "🚌" },
+    { "titre": "Une carte SIM locale (BH Telecom, M:tel) ou une eSIM est recommandée pour rester connecté. Le Wi-Fi est généralement disponible dans les hôtels et cafés.", "symbole": "📶" }
+  ],
+  "infos_decallees": [
+    {
+      "symbole": "💡",
+      "titre": "Le saviez-vous ?",
+      "texte": "Sarajevo est surnommée la \"Jérusalem de l'Europe\" en raison de la coexistence pacifique de quatre grandes religions (islam, orthodoxie, catholicisme, judaïsme) sur un territoire très restreint, avec des lieux de culte souvent à quelques pas les uns des autres."
+    },
+    {
+      "symbole": "🙃",
+      "titre": "Insolite",
+      "texte": "La ligne de démarcation entre l'architecture ottomane et austro-hongroise est si nette dans la rue Ferhadija qu'elle est souvent appelée la \"ligne de rencontre des cultures\", un endroit unique pour prendre une photo avec un pied dans chaque époque."
+    }
+  ],
+  "specialites_culinaires": [
+    {
+      "symbole": "🍴",
+      "titre": "Ćevapi",
+      "description": "De petites saucisses de viande hachée grillées, servies dans un pain plat appelé somun, avec des oignons crus et de la crème fraîche (kajmak). Un incontournable de la cuisine bosnienne."
+    },
+    {
+      "symbole": "🥧",
+      "titre": "Burek",
+      "description": "Une délicieuse pâte feuilletée salée, traditionnellement fourrée à la viande hachée, mais aussi disponible aux épinards, au fromage ou aux pommes de terre. Parfait pour un repas rapide et savoureux."
+    },
+    {
+      "symbole": "☕",
+      "titre": "Kahva (Café bosnien)",
+      "description": "Plus qu'une boisson, c'est un rituel. Préparé dans une džezva (cafetière en cuivre), il est servi dans une petite tasse sans anse, souvent accompagné d'un loukoum. Un moment de pure détente."
+    }
+  ],
+  "liens_utiles": [
+    { "legende": "Vols", "titre": "Réserve ton vol", "url": "https://www.kayak.fr/flights/CDG-SJJ/2026-01-09/2026-01-22", "symbole": "🛬" },
+    { "legende": "Infos officielles et inspirations", "titre": "Tourisme Sarajevo", "url": "https://sarajevo.travel/", "symbole": "📘" },
+    { "legende": "Transports en commun Sarajevo", "titre": "GRAS Sarajevo", "url": "https://gras.ba/", "symbole": "🚌" },
+    { "legende": "Météo", "titre": "Météo Sarajevo", "url": "https://www.accuweather.com/fr/ba/sarajevo/302099/weather-forecast/302099", "symbole": "🌤️" }
+  ]
+}

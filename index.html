@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarajevo : Détente et Histoire au Cœur des Balkans </title>
+    <link rel="icon" type="image/png" href="https://api.mytripplanner.fr/api/files/pbc_1321337024/47976eld0rscwbc/favicon_ytvg76obie.svg?thumb=100x100&token=" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée sereine à Sarajevo</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Immersion culturelle et saveurs locales</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Nature et panoramas apaisants</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Ponts historiques et musées apaisants</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Fortifications et vues imprenables</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Réflexion et sérénité au Tunnel de l'Espoir</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Art, histoire et détente urbaine</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Marchés colorés et artisanat local</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Parcs et sérénité urbaine</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Exploration culinaire et détente</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Bien-être et sérénité</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Derniers souvenirs et adieux à Sarajevo</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Départ de Sarajevo</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">SARAJEVO</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Sarajevo : Détente et Histoire au Cœur des Balkans</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ Du 9 au 22 Janvier 2026</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 Environ 1450 €/personne</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 4h30 (avec escale depuis Paris, France)</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+      <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+      </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée sereine à Sarajevo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après votre vol, installez-vous tranquillement et laissez-vous imprégner par l'atmosphère unique de la vieille ville. Une première balade douce est idéale pour commencer votre exploration.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛬 Arrivée à l'aéroport de Sarajevo</strong>: Transfert vers votre hébergement et installation pour un début de séjour en toute quiétude.</li><li><strong>🛏️ Installation à l'hôtel</strong>: Prenez le temps de vous rafraîchir et de vous détendre après le voyage.</li><li><strong>🚶‍♂️ Première balade à Baščaršija</strong>: Flânez dans le quartier ottoman de la vieille ville, admirez la fontaine Sebilj et imprégnez-vous de l'ambiance sans hâte.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ À savoir</p>
+                                <p class="text-gray-700">L'aéroport de Sarajevo (SJJ) est à environ 30 minutes du centre-ville. Des taxis et des bus sont disponibles pour le transfert.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion culturelle et saveurs locales</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez au cœur de l'histoire et de la culture de Sarajevo en explorant ses lieux emblématiques. Terminez la journée par une expérience culinaire authentique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🕌 Visite de la Mosquée de Gazi Husrev-beg</strong>: Admirez l'architecture ottomane de cette mosquée historique, un joyau de Baščaršija.</li><li><strong>🚶‍♀️ Exploration du quartier de Baščaršija</strong>: Perdez-vous dans les ruelles des artisans, découvrez les ateliers de cuivre et les boutiques traditionnelles.</li><li><strong>☕ Dégustation de café bosnien</strong>: Installez-vous dans un café traditionnel pour savourer un "kahva" préparé selon les rituels ancestraux, une véritable pause détente.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Astuce</p>
+                                <p class="text-gray-700">Le café bosnien se boit lentement, en petites gorgées, souvent accompagné d'un loukoum. C'est un moment de convivialité et de relaxation.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Nature et panoramas apaisants</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Échappez à l'agitation urbaine pour une journée dédiée à la nature et aux vues imprenables sur la ville. Une bouffée d'air frais garantie.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🌳 Promenade à Vrelo Bosne</strong>: Explorez les sources de la rivière Bosna, un parc naturel magnifique avec des allées ombragées et des ponts pittoresques, idéal pour une balade douce.</li><li><strong>🚠 Montée en téléphérique au Mont Trebević</strong>: Profitez d'une vue panoramique spectaculaire sur Sarajevo depuis les hauteurs du Mont Trebević, une expérience visuelle relaxante.</li><li><strong>☕ Pause détente au Mont Trebević</strong>: Savourez une boisson chaude ou un en-cas dans l'un des cafés du sommet, en admirant le paysage.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">❄️ Météo</p>
+                                <p class="text-gray-700">En janvier, le Mont Trebević peut être enneigé. Prévoyez des vêtements chauds et des chaussures adaptées pour profiter pleinement de la vue.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Ponts historiques et musées apaisants</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez les ponts emblématiques de Sarajevo et explorez des musées qui racontent l'histoire de la ville, tout en gardant un rythme doux.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🌉 Visite du Pont Latin</strong>: Traversez ce pont historique, lieu de l'assassinat de l'Archiduc François-Ferdinand, un moment clé de l'histoire européenne.</li><li><strong>🏛️ Musée de Sarajevo 1878-1918</strong>: Plongez dans l'histoire de la ville à la fin du 19e et début du 20e siècle, avec des expositions qui invitent à la réflexion.</li><li><strong>🚶‍♂️ Balade le long de la Miljacka</strong>: Profitez d'une promenade relaxante le long de la rivière Miljacka, admirant les différents ponts et l'architecture environnante.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📖 Contexte historique</p>
+                                <p class="text-gray-700">Le Pont Latin est un lieu chargé d'histoire, marquant le début de la Première Guerre mondiale. Prenez le temps de vous imprégner de son importance.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Fortifications et vues imprenables</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Montez aux anciennes forteresses pour des vues panoramiques sur Sarajevo. Une journée pour admirer la ville sous un autre angle et prendre de belles photos.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🏰 Visite de la Forteresse Jaune (Žuta Tabija)</strong>: Profitez d'une vue imprenable sur la ville, particulièrement belle au coucher du soleil, un moment de calme et de contemplation.</li><li><strong>🚶‍♀️ Promenade vers la Forteresse Blanche (Bijela Tabija)</strong>: Continuez votre ascension vers cette autre forteresse pour des perspectives différentes et une balade agréable.</li><li><strong>☕ Pause thé avec vue</strong>: Trouvez un petit café à proximité des forteresses pour une boisson chaude tout en admirant le panorama.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photographie</p>
+                                <p class="text-gray-700">Les forteresses offrent des points de vue exceptionnels pour capturer la beauté de Sarajevo, surtout au lever ou au coucher du soleil.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Réflexion et sérénité au Tunnel de l'Espoir</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Une journée dédiée à la mémoire et à la compréhension du passé récent de Sarajevo, suivie d'un moment de recueillement et de détente.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🕊️ Visite du Tunnel de l'Espoir (Tunel Spasa)</strong>: Explorez ce musée émouvant qui témoigne de la résilience de Sarajevo pendant le siège, une expérience poignante mais essentielle.</li><li><strong>🚶‍♂️ Promenade méditative dans les environs</strong>: Après la visite, prenez le temps de marcher tranquillement dans les champs environnants pour digérer l'expérience.</li><li><strong>☕ Pause café paisible</strong>: Trouvez un endroit calme pour vous reposer et réfléchir, loin de l'agitation.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚌 Accès</p>
+                                <p class="text-gray-700">Le Tunnel de l'Espoir est un peu excentré. Il est accessible en bus ou en taxi, ou via une visite organisée.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Art, histoire et détente urbaine</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez la richesse artistique et historique de Sarajevo à travers ses musées, puis profitez d'une après-midi de détente dans un quartier animé.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🏛️ Visite du Musée National de Bosnie-Herzégovine</strong>: Explorez les vastes collections archéologiques, ethnographiques et naturelles, un voyage à travers les âges.</li><li><strong>🎨 Galerie d'Art de Bosnie-Herzégovine</strong>: Admirez les œuvres d'artistes locaux et internationaux, offrant une perspective sur la scène artistique de la région.</li><li><strong>🚶‍♀️ Balade dans le quartier de Ferhadija</strong>: Promenez-vous dans cette rue piétonne animée, où se côtoient architectures ottomane, austro-hongroise et moderne, un lieu idéal pour observer la vie locale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶 À pied</p>
+                                <p class="text-gray-700">La rue Ferhadija est un excellent exemple de la diversité architecturale de Sarajevo, où l'Orient et l'Occident se rencontrent.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Marchés colorés et artisanat local</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Imprégnez-vous de l'ambiance des marchés locaux, découvrez l'artisanat traditionnel et profitez d'une après-midi pour vous détendre ou faire du shopping.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛍️ Visite du Marché de Markale</strong>: Explorez ce marché couvert historique, découvrez les produits frais locaux et l'effervescence de la vie quotidienne.</li><li><strong>🏺 Découverte des artisans de Kazandžiluk</strong>: Flânez dans la rue des chaudronniers, admirez le travail du cuivre et peut-être trouvez un souvenir unique.</li><li><strong>☕ Détente et shopping libre</strong>: Profitez de l'après-midi pour vous détendre dans un café, faire du shopping ou revisiter un lieu coup de cœur.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Souvenirs</p>
+                                <p class="text-gray-700">Les objets en cuivre fabriqués à la main sont des souvenirs authentiques de Sarajevo. N'hésitez pas à marchander gentiment.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Parcs et sérénité urbaine</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Une journée pour se ressourcer dans les espaces verts de Sarajevo et profiter de la tranquillité des lieux, loin de l'agitation.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🌳 Promenade au Parc Veliki</strong>: Détendez-vous dans ce grand parc central, idéal pour une marche paisible ou simplement pour s'asseoir et observer la vie.</li><li><strong>⛪ Visite de la Cathédrale du Cœur de Jésus</strong>: Admirez l'architecture néo-gothique de cette cathédrale emblématique, un havre de paix au cœur de la ville.</li><li><strong>☕ Pause gourmande</strong>: Savourez une pâtisserie locale et un café dans un des salons de thé à proximité.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🕊️ Tranquillité</p>
+                                <p class="text-gray-700">Le Parc Veliki est un lieu parfait pour une pause méditative, offrant un contraste apaisant avec l'animation de la ville.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Exploration culinaire et détente</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans la gastronomie bosnienne avec une expérience culinaire, puis profitez d'une après-midi libre pour vous détendre ou explorer à votre guise.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🍽️ Cours de cuisine bosnienne (optionnel)</strong>: Apprenez à préparer des spécialités locales comme les ćevapi ou le burek, une activité interactive et gourmande.</li><li><strong>🚶‍♀️ Découverte des ruelles cachées</strong>: Explorez des passages et des cours intérieures moins connus de la vieille ville, à la recherche de trésors cachés.</li><li><strong>☕ Après-midi libre et détente</strong>: Profitez de ce temps pour vous reposer, lire un livre dans un café ou faire une dernière visite à un endroit que vous avez aimé.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👨‍🍳 Cuisine</p>
+                                <p class="text-gray-700">De nombreux restaurants proposent des cours de cuisine pour découvrir les secrets des plats bosniens. Renseignez-vous localement.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Bien-être et sérénité</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Une journée dédiée au bien-être et à la relaxation, pour recharger les batteries avant la fin du séjour. Profitez des options de détente qu'offre la ville.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🧖‍♀️ Matinée spa ou hammam (optionnel)</strong>: Offrez-vous un moment de détente dans un spa d'hôtel ou un hammam traditionnel, pour une relaxation profonde.</li><li><strong>📚 Visite de la Bibliothèque Nationale et Universitaire</strong>: Admirez l'architecture impressionnante de ce bâtiment reconstruit, symbole de la résilience de Sarajevo, un lieu calme et inspirant.</li><li><strong>🚶‍♂️ Balade dans le quartier de Skenderija</strong>: Découvrez ce quartier moderne avec son centre sportif et ses espaces verts, pour une promenade différente.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💆‍♀️ Détente</p>
+                                <p class="text-gray-700">Plusieurs hôtels à Sarajevo proposent des services de spa et de massage, parfaits pour une journée de relaxation.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers souvenirs et adieux à Sarajevo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de votre dernière journée pour acheter des souvenirs, revisiter vos lieux préférés et savourer une dernière fois l'ambiance unique de Sarajevo.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🎁 Achats de souvenirs à Baščaršija</strong>: Trouvez les derniers cadeaux et souvenirs dans les boutiques de la vieille ville, des objets artisanaux aux délices locaux.</li><li><strong>🚶‍♀️ Dernière balade contemplative</strong>: Revoyez vos endroits favoris, prenez le temps de vous imprégner une dernière fois de l'atmosphère de Sarajevo.</li><li><strong>🍽️ Dîner d'adieu avec spécialités locales</strong>: Terminez votre séjour par un délicieux repas dans un restaurant traditionnel, savourant les saveurs bosniennes.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Conseil</p>
+                                <p class="text-gray-700">N'oubliez pas de goûter au rahat lokum (loukoum) et aux dattes, des douceurs parfaites pour accompagner le café bosnien.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ de Sarajevo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un séjour riche en découvertes et en détente, il est temps de quitter Sarajevo, la tête pleine de souvenirs et le cœur léger.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>☕ Petit-déjeuner à l'hôtel</strong>: Profitez d'un dernier repas avant de partir.</li><li><strong>🛄 Préparation et check-out</strong>: Organisez vos affaires et quittez votre hébergement.</li><li><strong>🛫 Transfert à l'aéroport et vol retour</strong>: Dirigez-vous vers l'aéroport de Sarajevo pour votre vol vers Paris, France.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Sarajevo-dhx234elx69e37n/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✈️ Vol</p>
+                                <p class="text-gray-700">Prévoyez suffisamment de temps pour le transfert à l'aéroport et les formalités d'embarquement.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>A partir de 241 €/pers</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>Environ 100 €/pers (transports locaux, taxi occasionnel)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>Environ 500 €/pers (restaurants de gamme moyenne)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>Environ 400 €/pers (hôtel 3* en chambre double)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>Environ 200 €/pers (entrées musées, téléphérique, cours de cuisine optionnel)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Janvier (hiver)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Printemps (avril-mai)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Automne (septembre-octobre)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🥶 En janvier, les températures à Sarajevo varient entre -5°C et 5°C. Prévoyez des vêtements très chauds, un bonnet, des gants et des chaussures imperméables.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💳 La monnaie est le Mark convertible (BAM). Les cartes de crédit sont acceptées dans la plupart des commerces, mais ayez toujours un peu de liquide pour les petits achats ou les marchés.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🚌 Le réseau de tramways et de bus est efficace pour se déplacer dans Sarajevo. Les taxis sont abordables. La marche est agréable dans la vieille ville.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">📶 Une carte SIM locale (BH Telecom, M:tel) ou une eSIM est recommandée pour rester connecté. Le Wi-Fi est généralement disponible dans les hôtels et cafés.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Sarajevo-dhx234elx69e37n/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.kayak.fr/flights/CDG-SJJ/2026-01-09/2026-01-22" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🛬 Réserve ton vol</strong></a></li>
+                    
+                        <li><a href="https://sarajevo.travel/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Tourisme Sarajevo</strong></a></li>
+                    
+                        <li><a href="https://gras.ba/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🚌 GRAS Sarajevo</strong></a></li>
+                    
+                        <li><a href="https://www.accuweather.com/fr/ba/sarajevo/302099/weather-forecast/302099" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Météo Sarajevo</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
